@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+<title>Traffic accident prevention</title>
+<meta name="theme-color" content="#308455" />
+<meta name="robots" content="noindex,nofollow" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+    @-webkit-keyframes spinner { /* For Safari */
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spinner {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .spin-it {
+       -webkit-animation: spinner 1s linear infinite; /* Safari */
+       animation: spinner 1s linear infinite;
+    }
+	#title{
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	}
+
+	#subtitle{
+		color: rgb(114, 114, 114);
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 24px;
+	}
+
+	header {
+		display: inline-block;
+		text-align: center;
+		box-shadow: 20px 20px 60px #cccccc, -20px -20px 60px #ffffff;
+		color: rgb(48, 48, 48);
+		font-size: 37px;
+		border-radius: 50px;
+		background-color: #f0f0f0;
+		padding-left: 50px;
+		padding-right: 50px;
+		margin: 30px 430px 0px 300px;
+		text-align: left;
+	}
+
+	.src {
+		text-align: center;
+		color: lightgray;
+	}
+</style>
+
+</head>
+<body>
+
+	<header>
+		<h1 id="title"> Traffic accident prevention </h1>
+		<p id="subtitle"> Alert in case of danger </p>
+	</header>
+
+<section id="main">
+
+  <br>
+  <div class="container" style="background-color: #f0f0f0; border-radius: 50px; box-shadow: 20px 20px 60px #cccccc, -20px -20px 60px #ffffff; padding-bottom: 30px; width: 990px;">
+     <div class="col-sm-6" id="cnv-width" style=" margin-top: 35px; padding-left: 50px;">
+	   <div id="video-holder"></div>
+     </div>
+
+     <div class="col-sm-6" style="text-align: center; margin-top: 20px;">
+  	   <div id="status">
+  	   <!--	<h3 style="color: blue;"><i class="fa fa-spinner spin-it"></i></h3>-->
+  	   	  <h3 style="color: #0d7a28;font-size: 45px;">로딩중</h3>
+  	   </div>
+
+
+      <div class="left-content" style="text-align: left;font-size: 18px;">
+  	   <!-- <p>What do you think about machine learning and artificial intelligence?</p> -->
+  	  </div>
+
+
+     </div>
+  </div>
+</section>
+
+<!-- Load canvas above -->
+
+
+ <audio style="display: none;" id="ridersound" controls>
+  <source src="rider.mp3" type="audio/mpeg">
+</audio>
+
+<audio style="display: none;" id="humansound" controls>
+	<source src="human.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+<!-- <div>Teachable Machine Image Model - p5.js and ml5.js</div> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="detect.js"></script>
+<br>
+<p class="src">
+	이 콘텐츠는 인공지능 가상 연기자 서비스, 타입캐스트를 활용하여 제작되었습니다.
+	<br>
+	출연진: 호빈이
+	<br>
+	https://typecast.ai
+	<br>
+	Special thanks to HOAN_C
+</p>
+</body>
+</html>
